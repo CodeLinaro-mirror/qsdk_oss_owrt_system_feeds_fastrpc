@@ -48,7 +48,7 @@ define Package/fastrpc
   CATEGORY:=Utilities
   TITLE:=Qualcomm FastRPC applications and library
   URL:=https://github.com/qualcomm/fastrpc
-  DEPENDS:=@TARGET_ipq96xx +libyaml +libbsd
+  DEPENDS:=@(TARGET_ipq96xx||TARGET_ipq95xx) +libyaml +libbsd
 endef
 
 
