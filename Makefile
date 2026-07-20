@@ -112,10 +112,9 @@ define Package/fastrpc/install
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/src/.libs/libcdsp*.so.* $(1)/usr/lib/
 
 	# -------------------------
-	# Install init script
+	# Install init script (not auto-started at boot; run manually via /etc/init.d/cdsprpcd start)
 	# -------------------------
 	$(INSTALL_BIN) ./files/cdsprpcd.init $(1)/etc/init.d/cdsprpcd
-	$(LN) ../init.d/cdsprpcd $(1)/etc/rc.d/S95cdsprpcd
 
 	# -------------------------
 	# Install udev rules
