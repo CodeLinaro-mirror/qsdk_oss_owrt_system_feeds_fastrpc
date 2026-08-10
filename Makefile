@@ -24,6 +24,7 @@ PKG_SOURCE_URL:=https://github.com/qualcomm/fastrpc.git
 PKG_SOURCE_VERSION:=8572ae1c45d38a4dc8853b1b9b6738207ab1ce94
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_BRANCH:=main
+PKG_HASH:=5fb011318b6c5630f5c67d0b452ae37727af7a62a0c6af6df4b62c8d01ebde5c
 
 
 # ------------------------------------------------------------------------------
